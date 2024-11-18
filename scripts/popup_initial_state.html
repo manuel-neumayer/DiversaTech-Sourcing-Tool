@@ -1,0 +1,27 @@
+<html>
+  <head>
+    
+  </head>  
+  <body>
+    <title>DT Sourcing Tool</title>
+    <p>This is your personalized sourcing tool. Enter a search phrase, for example "apple product manager linkedin", below.</p>
+    <input type="text" id="userinput"></input>
+    <p id="search_queries_p"></p>
+    <button id="button">Search profiles!</button>
+    <p>Type a number (x) to determine how many Google search results should be processed per query. (10 times x results will be processed.) Keep in mind that each search is "costly", so only set x=3 if you expect more than 20 meaningful results, or x=4 if more than 30 (i.e. for large companies). You can read more on this in the README linked below.</p>
+    <input type="number" id="quantity" name="quantity" min="1" max="10">
+    <p>Below, enter the ID of the Google Spreadsheet where you want to store the profiles you source.
+      The ID of a Google spreadsheet is the long string of letters and numbers in the middle of its URL.
+      I.e., if you have a Google spreadsheet open in your browser, its URL (the link in the browser's search bar) will look like this: https://docs.google.com/spreadsheets/d/{Spreadsheet ID}}/edit{...}.
+      Simply copy the ID and paste it below. When you link a new spreadsheet for the first time, make sure its empty.</p>
+    <input type="text" id="spreadsheet"></input>
+    <p>If you want to sign into another Google account (i.e., access a Google spreadsheet from another account), sign into your preferred Google account in the Chrome browser,
+      then click Log Out below, and then reload the extension.</p>
+    <button id="logout">Log Out</button>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="popup_initial_state.js"></script>
+    <!--<img src="./dt-logo.jpg" id="dt_logo">-->
+    <a href="https://docs.google.com/document/d/1ogwyQwJ4onCNL0bCsf2lQv4PbgPNUBecFNKmPJ63ElE/edit?usp=sharing">Open the README for help.</a>
+  </body>
+</html>

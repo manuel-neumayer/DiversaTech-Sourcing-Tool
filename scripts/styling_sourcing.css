@@ -1,0 +1,112 @@
+/*<link rel="stylesheet" href="styling_sourcing.css">*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  height: 30px; /* reduce the height of the input fields */
+  font-size: 14px; /* reduce the font size */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px; /* reduce the padding */
+  box-sizing: border-box;
+  /*margin-bottom: 10px; /* increase the margin between elements */
+}
+
+button {
+  width: 50%;
+  height: 30px; /* reduce the height of the buttons */
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px; /* reduce the font size */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /*margin-top: 20px;*/
+}
+
+#skip {
+  width: 50%;
+  height: 30px; /* reduce the height of the buttons */
+  background-color: #f44336;
+  color: white;
+  font-size: 14px; /* reduce the font size */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /*margin-top: 20px;*/
+}
+
+p {
+  font-size: 14px; /* reduce the font size */
+  /*margin-bottom: 10px;*/
+}
+
+#lastP {
+  font-size: 14px;
+}
+
+#infoP {
+  font-size: 14px;
+  /*margin-top: 20px;*/
+}
+
+
+/*body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 50%;
+  height: 40px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#skip {
+  width: 50%;
+  height: 40px;
+  background-color: #f44336;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#lastP {
+  font-size: 14px;
+}
+
+#infoP {
+  font-size: 14px;
+  margin-top: 20px;
+}*/

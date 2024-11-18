@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>DT Sourcing Tool</title>
+  </head>
+  <body>
+    <p>A new window opened with a Linkedin profile found through your search queries.
+      If not already open, open the inline ContactOut widget, and click 'View emails', if they are not already visible.
+      Then click anywhere (but not on a link) on the Linkedin profile page and press any key on your keybaord.
+      This allows the DT Sourcing Tool to fetch the emails ContactOut finds.
+      The fetched company and emails will appear below (position and name are already there).
+      You can edit company, position, name and emails, or add a new email.
+      You can also delete the emails you don't want to keep by just making their textbox empty.
+    </p>
+    <p>Company</p>
+    <input type="text" id="company"></input>
+    <p id="positionP">Position</p>
+    <input type="text" id="position"></input>
+    <p>First Name</p>
+    <input type="text" id="firstname">
+    </input><p>Last Name</p>
+    <input type="text" id="lastname"></input>
+    <p>Email 1</p>
+    <input type="text" id="email1"></input>
+    <p>Email 2</p>
+    <input type="text" id="email2"></input>
+    <p>Email 3</p>
+    <input type="text" id="email3"></input>
+    <p>Email 4</p>
+    <input type="text" id="email4"></input>
+    <p>Alum</p>
+    <input type="text" id="alum"></input>
+    <p id="lastP">Number of results:</p>
+    <button id="button">Save profile and show next!</button>
+    <button id="skip">Skip profile!</button>
+    <p id="infoP">Search Result Data:</p>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="popup_get_email_state.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "manifest_version": 3,
+  "name": "DT Sourcing Tool",
+  "version": "1.0",
+  "description": "Accelerate Sourcing.",
+  "permissions": ["tabs", "scripting", "storage", "identity"],
+  "host_permissions": ["https://*/*"],
+
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk4BPzZVkYIW98RjaQgS5ObBTbLb8THN0+Ovb18QMXCugJQ3ApqMU2x07p30iMcCURsUlfeTjQDJ0lTA/GIQ9F8CJ0zlmBbg3Vti42aMJMqO44JTP3sICeiS85GtH9o5VBIgZYkbx8ReefWMwDLnSBHyRBiixq/qtOGS8/EoM5FIIqCEJSRnNd/RvDFlU6wltNN42/HQ/uEiBCa438/ytzm7YR4ZjOHjaHouuiqdudnWZBDWKQsoig0kmXjD/JpV/1HOXlpHsT38MiTXfRMP5xt48q7Uv+HK0H1L+0xWl3iTbgYoEzMUASLWAURhkGPEautdV/ZtFS2I7/XcXY3wm3QIDAQAB",
+
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    },
+    "default_title": "Click here to open the DT Sourcing Tool."
+  },
+
+  "oauth2": {
+    "client_id": "80741489361-2cont08sk3eghg5j6ka4p4rtlvrjkt46.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/spreadsheets"]
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": [ "scripts/popup_initial_state.html", "scripts/popup_get_email_state.html" ],
+      "matches": [ "https://*/*" ]
+    }
+  ],
+
+  "comment - popup as action": {
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'",
+      "sandbox": "script-src 'self' https://apis.google.com/; object-src 'self'"
+    },
+
+    "service_worker": "scripts/background.js",
+
+    "action": {
+      "default_popup": "script/popup.html",
+      "default_title": "Press Ctrl(Win)/Command(Mac)+Shift+Right/Left to flip tabs"
+    },
+
+    "content_scripts": [
+      {
+        "js": [
+          "scripts/content.js"
+        ],
+        "matches": [
+          "https://linkedin.com/*"
+        ]
+      }
+    ]
+  },
+
+  "background": {
+    "service_worker": "scripts/background.js"
+  }
+}
